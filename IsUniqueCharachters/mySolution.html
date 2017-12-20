@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    function isUnique(str) {
+        for (let i = 0; i < str.length; ++i) {
+            for(let j = i+1; j < str.length; ++j){
+                if(str[i] == str[j])
+                {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+    console.log(isUnique("abc"));
+</script>
+
 </body>
 </html>
