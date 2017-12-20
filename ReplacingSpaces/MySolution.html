@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function replaceAndCountChars(str) {
+        let obj = {};
+        let length = str.length;
+        obj.length = length;
+        let newArr = str.split(' ').join('%20');
+        obj.arr = newArr;
+        return obj;
+    }
+    console.log(replaceAndCountChars('AaBb sadasd asdaaa'));
+</script>
+
+</body>
+</html>
