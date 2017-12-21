@@ -2,9 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    /*function isPalindrom(str){
+        let start = 0;
+        let end =  str.length-1;
+        let palindrom = true;
+        while (start < end)
+        {
+            if(str[start] == str[end])
+            {
+                start++;
+                end--;
+            }
+            else
+                return palindrom = false;
+        }
+        return palindrom
+    }
+   console.log(isPalindrom('abccbad'));
+*/
+    function permutation(str1,str2){
+
+        if(str1.length != str2.length){
+            return false
+        }
+        var res1 = str1.split('');
+        var res2 = str2.split('');
+        res1 =res1.sort(function (a,b) {
+            return a.localeCompare(b);
+        }).join('');
+        res2=res2.sort(function (a,b) {
+            return a.localeCompare(b);
+        }).join('');
+        console.log(res1,res2);
+        return(res1 == res2);
+    }
+   console.log(permutation('abba','baab'));
+    
+</script>
 </body>
 </html>
